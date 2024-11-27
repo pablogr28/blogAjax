@@ -1,0 +1,49 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "Primer Artículo",
+        "content": "Este es el contenido del primer artículo.",
+        "autorId": 1
+      },
+      {
+        "id": 2,
+        "title": "Segundo Artículo",
+        "content": "Este es el contenido del segundo artículo.",
+        "autorId": 2
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "name": "Juan Pérez",
+        "email": "juan@example.com"
+      },
+      {
+        "id": 2,
+        "name": "Ana López",
+        "email": "ana@example.com"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "comment": "¡Excelente artículo!",
+        "userId": 1,
+        "articleId": 1
+      },
+      {
+        "id": 2,
+        "comment": "Muy interesante, me gustó mucho.",
+        "userId": 2,
+        "articleId": 1
+      },
+      {
+        "id": 3,
+        "comment": "Buen contenido, pero falta profundizar en algunos temas.",
+        "userId": 1,
+        "articleId": 2
+      }
+    ]
+  }
+  

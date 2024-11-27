@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simple.css">
+    <title>Lista de Posts</title>
+</head>
+
+<body>
+    <header>
+        <h1>Posts</h1>
+        <nav>
+            <a href="index.html" class="active">Listar posts</a>
+            <a href="create-post.html">Añadir Post</a>
+            <a href="create-user.html">Añadir usuario</a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="postsTable">
+                <!-- Las filas de los posts se generan dinámicamente -->
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

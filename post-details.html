@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+  <title>Detalles del Post</title>
+</head>
+<body>
+  <header>
+    <h1 id="postTitle">Título del Post</h1>
+    <nav>
+        <a href="index.html">Listar posts</a>
+        <a href="create-post.html">Añadir Post</a>
+        <a href="create-user.html">Añadir usuario</a>
+    </nav>
+    <p id="postAuthor">Autor: </p>
+  </header>
+  <main>
+    <article id="postContent">
+      <!-- El contenido del post se genera dinámicamente -->
+    </article>
+
+    <section>
+      <h2>Comentarios</h2>
+      <ul id="commentsList">
+        <!-- Los comentarios se generan dinámicamente -->
+      </ul>
+      
+      <form id="commentForm">
+        <label for="commentAuthor">Autor:</label>
+        <select id="commentAuthor" name="commentAuthor">
+          <!-- Los usuarios se generan dinámicamente -->
+        </select>
+        
+        <label for="commentContent">Comentario:</label>
+        <textarea id="commentContent" name="commentContent" required></textarea>
+        
+        <button type="submit">Añadir Comentario</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
