@@ -1,49 +1,78 @@
 {
-    "articles": [
-      {
-        "id": 1,
-        "title": "Primer Artículo",
-        "content": "Este es el contenido del primer artículo.",
-        "autorId": 1
-      },
-      {
-        "id": 2,
-        "title": "Segundo Artículo",
-        "content": "Este es el contenido del segundo artículo.",
-        "autorId": 2
-      }
-    ],
-    "users": [
-      {
-        "id": 1,
-        "name": "Juan Pérez",
-        "email": "juan@example.com"
-      },
-      {
-        "id": 2,
-        "name": "Ana López",
-        "email": "ana@example.com"
-      }
-    ],
-    "comments": [
-      {
-        "id": 1,
-        "comment": "¡Excelente artículo!",
-        "userId": 1,
-        "articleId": 1
-      },
-      {
-        "id": 2,
-        "comment": "Muy interesante, me gustó mucho.",
-        "userId": 2,
-        "articleId": 1
-      },
-      {
-        "id": 3,
-        "comment": "Buen contenido, pero falta profundizar en algunos temas.",
-        "userId": 1,
-        "articleId": 2
-      }
-    ]
-  }
-  
+  "articles": [
+    {
+      "id": "1",
+      "title": "Primer Artículo",
+      "content": "Este es el contenido del primer artículo.",
+      "autorId": 1
+    },
+    {
+      "id": "2",
+      "title": "Segundo Artículo",
+      "content": "Este es el contenido del segundo artículo.",
+      "autorId": 2
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Pabli Gómez",
+      "email": "pagorom28@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Ana López",
+      "email": "ana@example.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "comment": "¡Excelente artículo!",
+      "userId": 1,
+      "articleId": 1
+    },
+    {
+      "id": "2",
+      "comment": "Muy interesante, me gustó mucho.",
+      "userId": 2,
+      "articleId": 1
+    },
+    {
+      "id": "3",
+      "comment": "Buen contenido, pero falta profundizar en algunos temas.",
+      "userId": 1,
+      "articleId": 2
+    },
+    {
+      "id": "9de8",
+      "userId": 1,
+      "comment": "Buen producto",
+      "articleId": 1
+    },
+    {
+      "id": "d40e",
+      "userId": "1",
+      "comment": "dnjfnn",
+      "articleId": "1"
+    },
+    {
+      "id": "4d26",
+      "userId": "1",
+      "comment": "prueba\n",
+      "articleId": "1"
+    },
+    {
+      "id": "5e68",
+      "userId": "2",
+      "comment": "Monster verde es superior",
+      "articleId": "2"
+    },
+    {
+      "id": "c840",
+      "userId": "1",
+      "comment": "Este producto esta bien",
+      "articleId": "2"
+    }
+  ]
+}
