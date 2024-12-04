@@ -11,6 +11,36 @@
       "title": "Segundo Artículo",
       "content": "Este es el contenido del segundo artículo.",
       "autorId": 2
+    },
+    {
+      "id": "4d79",
+      "title": "POST DE PRUEBA",
+      "content": "PRUEBA",
+      "autorId": ""
+    },
+    {
+      "id": "46cd",
+      "title": "POST DE PABLI",
+      "content": "BUENAS TARDES",
+      "autorId": 1
+    },
+    {
+      "id": "16b8",
+      "title": "POST DE PABLI 2",
+      "content": "PRUEBA 2",
+      "autorId": 1
+    },
+    {
+      "id": "c06e",
+      "title": "POST DE PABLI 3",
+      "content": "PRUEBA 3",
+      "autorId": 1
+    },
+    {
+      "id": "9058",
+      "title": "POST DE PABLIIIII",
+      "content": "PRUEBA PABLIIII",
+      "autorId": null
     }
   ],
   "users": [
@@ -23,6 +53,11 @@
       "id": "2",
       "name": "Ana López",
       "email": "ana@example.com"
+    },
+    {
+      "id": "d309",
+      "name": "Pabli",
+      "email": "pagorom28@gmail.com"
     }
   ],
   "comments": [
@@ -72,6 +107,12 @@
       "id": "c840",
       "userId": "1",
       "comment": "Este producto esta bien",
+      "articleId": "2"
+    },
+    {
+      "id": "efbb",
+      "userId": "1",
+      "comment": "Monster rojo top\n",
       "articleId": "2"
     }
   ]

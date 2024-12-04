@@ -3,6 +3,7 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
+
 async function loadArticleDetails() {
     try {
         const articleId = getQueryParam('id');
@@ -23,21 +24,25 @@ async function loadArticleDetails() {
 
         const { articles, users, comments } = data;
 
+        // Buscar artículo por ID
         const article = articles.find(a => a.id === articleId);
         if (!article) {
             throw new Error(`No se encontró un artículo con ID ${articleId}.`);
         }
 
-        const author = users.find(u => u.id === article.autorId.toString());
+        // Buscar autor del artículo
+        const author = users.find(u => u.id.toString() === article.autorId.toString());
 
+        // Mostrar detalles del artículo
         document.getElementById('postTitle').innerText = article.title;
         document.getElementById('postAuthor').innerText = `Autor: ${author ? author.name : 'Desconocido'}`;
         document.getElementById('postContent').innerText = article.content;
 
-        const articleComments = comments.filter(c => c.articleId === articleId);
-        console.log('Comentarios del artículo:', articleComments);
-
+        // Filtrar y renderizar los comentarios del artículo
+        const articleComments = comments.filter(c => c.articleId.toString() === articleId.toString());
         renderComments(articleComments, users);
+
+        // Poblar el select de autores
         populateAuthorSelect(users);
     } catch (error) {
         console.error('Error al cargar los detalles:', error);
@@ -50,7 +55,7 @@ function renderComments(comments, users) {
     commentsList.innerHTML = ''; 
 
     comments.forEach(comment => {
-        const commentAuthor = users.find(u => u.id === comment.userId.toString());
+        const commentAuthor = users.find(u => u.id.toString() === comment.userId.toString());
         const listItem = document.createElement('li');
         listItem.innerText = `${commentAuthor ? commentAuthor.name : 'Anónimo'}: ${comment.comment}`;
         commentsList.appendChild(listItem);
@@ -124,3 +129,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadArticleDetails();
     document.getElementById('commentForm').addEventListener('submit', handleCommentFormSubmit);
 });
+
